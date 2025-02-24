@@ -62,7 +62,7 @@ function addInputToMarkup(memberObj) {
                 <img src="${img}" class="h-100" alt="..." />
               </div>
               <div class="col-md-8">
-                <div class="card-body text-white bg-black">
+                <div class="card-body text-white bg-black h-100">
                   <h3 class="card-title">${name}</h3>
                   <p class="card-text">${role}</p>
                   <p class="card-text email">${email}</p>
