@@ -81,3 +81,22 @@ function addInputToMarkup(memberObj) {
 renderTeamMembers(teamMembers, cardsEl)
 
 // addEventListener "Submit" to the form
+
+formEl.addEventListener("submit", (e) => {
+  e.preventDefault() // (e) and e.preventDefault stops the submit from refreshing the page after pressing it
+
+  const name = document.getElementById("name")
+  const job = document.getElementById("job")
+  const email = document.getElementById("email")
+  const img = document.getElementById("img")
+
+  const member = {
+    name,
+    job,
+    email,
+    img
+  }
+
+
+
+})
