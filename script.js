@@ -37,3 +37,44 @@ const teamMembers = [
   }
 ];
 
+// SELECT THE DOM ELEMENTS
+
+const cardsEl = document.getElementById("cards")
+
+// Functions
+
+function renderTeamMembers(teamMembers, cardsEl) {
+  for (let i = 0; i < teamMembers.length; i++) {
+    thisObject = teamMembers[i]
+    cardsEl.innerHTML += addInputToMarkup(thisObject)
+  }
+}
+
+function addInputToMarkup(memberObj) {
+
+  const { name, role, email, img } = memberObj
+
+  const markup = `
+        <div class="col">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="${img}" class="h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body text-white bg-black">
+                  <h3 class="card-title">${name}</h3>
+                  <p class="card-text">${role}</p>
+                  <p class="card-text email">${email}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`
+  return markup
+}
+
+
+// call the functions
+
+renderTeamMembers(teamMembers, cardsEl)
