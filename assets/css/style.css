@@ -5,9 +5,14 @@
   font-family: "Open Sans", serif;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
 :root {
   --ot-main: #e53170;
-  --ot-accent: #177fd2;
+  --ot-accent: #58bbdc;
   --ot-dark: black;
   --ot-light: white;
 }
@@ -15,4 +20,13 @@
 h1 {
   color: var(--ot-main);
   font-weight: 800;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+.email {
+  color: var(--ot-accent);
+  filter: brightness();
 }
