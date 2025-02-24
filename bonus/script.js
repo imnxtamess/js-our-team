@@ -85,18 +85,21 @@ renderTeamMembers(teamMembers, cardsEl)
 formEl.addEventListener("submit", (e) => {
   e.preventDefault() // (e) and e.preventDefault stops the submit from refreshing the page after pressing it
 
-  const name = document.getElementById("name")
-  const job = document.getElementById("job")
-  const email = document.getElementById("email")
-  const img = document.getElementById("img")
+  const name = document.getElementById("name").value
+  const role = document.getElementById("role").value
+  const email = document.getElementById("email").value
+  const img = document.getElementById("img").value
 
   const member = {
     name,
-    job,
+    role,
     email,
-    img
+    img,
   }
 
+  cardsEl.innerHTML += addInputToMarkup(member) // calls the function to add html with the info given from the user inputs
+
+  formEl.reset() // Resets the form after submitting it
 
 
 })
