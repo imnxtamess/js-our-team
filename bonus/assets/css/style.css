@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", serif;
+  font-family: "Fredoka", serif;
 }
 
 img {
@@ -30,6 +30,15 @@ h3 {
 .email {
   color: var(--ot-accent);
   filter: brightness();
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.email:hover {
+  text-overflow: initial;
+  overflow: visible;
+  background-color: black;
 }
 
 .btn {
