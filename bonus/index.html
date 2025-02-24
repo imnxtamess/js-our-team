@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center pt-4">Meet our Team</h1>
+      <p class="text-center pt-4">
+        Would you like to be part of the team? Just submit your details in the
+        form below and see how you'd look like next to our team, give it a try!
+      </p>
+      <form id="member_form" class="py-4">
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            placeholder="Type your name"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="job"
+            placeholder="Type your role"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="email"
+            placeholder="fabio@fabioni.fabietti"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="image"
+            placeholder="https://your_image.jpg"
+          />
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+
+      <div
+        id="cards"
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4"
+      >
+        <!-- <div class="col">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./assets/img/male1.png" class="h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body text-white bg-black">
+                  <h3 class="card-title">Fabio fabioni</h3>
+                  <p class="card-text">Developer</p>
+                  <p class="card-text email">email@emailoni</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  -->
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
