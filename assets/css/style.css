@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", serif;
 }
 
 :root {
@@ -9,4 +10,9 @@
   --ot-accent: #177fd2;
   --ot-dark: black;
   --ot-light: white;
+}
+
+h1 {
+  color: var(--ot-main);
+  font-weight: 800;
 }
